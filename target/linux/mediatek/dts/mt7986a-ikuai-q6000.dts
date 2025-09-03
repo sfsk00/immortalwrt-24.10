@@ -174,19 +174,19 @@
 			partition@0 {
 				label = "BL2";
 				reg = <0x000000 0x100000>;
-				read-only;
+				//read-only;
 			};
 
 			partition@100000 {
 				label = "u-boot-env";
 				reg = <0x100000 0x80000>;
-				read-only;
+				//read-only;
 			};
 
 			partition@180000 {
 				label = "Factory";
 				reg = <0x180000 0x200000>;
-				read-only;
+				//read-only;
 
 				nvmem-layout {
 					compatible = "fixed-layout";
@@ -202,12 +202,12 @@
 			partition@380000 {
 				label = "FIP";
 				reg = <0x380000 0x200000>;
-				read-only;
+				//read-only;
 			};
 
 			partition@580000 {
 				label = "ubi";
-				reg = <0x580000 0x7200000>;
+				//reg = <0x580000 0x7200000>;
 			};
 		};
 	};
